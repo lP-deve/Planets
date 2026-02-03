@@ -1,0 +1,51 @@
+
+.card {
+  border: 1px solid rgb(243, 243, 243);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: rgb(246, 246, 246);
+  cursor: pointer;
+  transition: 0.3s;
+ box-shadow: rgba(149, 157, 165, 0.129) 0px 8px 24px;
+}
+.card:hover{
+   opacity: 0.8;
+   scale: 1.01;
+   background-color: #333;
+  
+}
+.card:hover p, .card:hover h2 {
+  color: rgb(255, 255, 255);
+}
+
+
+.card img {
+  width: 80%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.card p{
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:1100px){
+    .card img{
+        width: 100%;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .card h2{
+        font-size: 18px;
+    }
+}
+
+
+
